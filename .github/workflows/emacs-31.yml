@@ -1,24 +1,25 @@
 name: Emacs 31
 
-on:
-  push:
-    branches:
-      - master
-      - dev
-    paths:
-      - 'Formula/emacs-head@31.rb'
-      - 'patches/**'
-      - 'Library/**'
-      - '.github/workflows/emacs-31.yml'
-  pull_request:
-    paths:
-      - 'Formula/emacs-head@31.rb'
-      - 'patches/**'
-      - 'Library/**'
-      - '.github/workflows/emacs-31.yml'
-  schedule:
-    - cron:  '0 7 * * *'
-
+# Triggers intentionally disabled for Argus-OSS-Security.
+# on:
+#   push:
+#     branches:
+#       - master
+#       - dev
+#     paths:
+#       - 'Formula/emacs-head@31.rb'
+#       - 'patches/**'
+#       - 'Library/**'
+#       - '.github/workflows/emacs-31.yml'
+#   pull_request:
+#     paths:
+#       - 'Formula/emacs-head@31.rb'
+#       - 'patches/**'
+#       - 'Library/**'
+#       - '.github/workflows/emacs-31.yml'
+#   schedule:
+#     - cron:  '0 7 * * *'
+# 
 jobs:
   build:
 

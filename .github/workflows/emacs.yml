@@ -1,20 +1,21 @@
 name: Emacs (default)
 
-on:
-  push:
-    branches:
-      - master
-      - dev
-    paths:
-      - 'Aliases/emacs-head'
-      - '.github/workflows/emacs.yml'
-  pull_request:
-    paths:
-      - 'Aliases/emacs-head'
-      - '.github/workflows/emacs.yml'
-  schedule:
-    - cron:  '0 7 * * *'
-
+# Triggers intentionally disabled for Argus-OSS-Security.
+# on:
+#   push:
+#     branches:
+#       - master
+#       - dev
+#     paths:
+#       - 'Aliases/emacs-head'
+#       - '.github/workflows/emacs.yml'
+#   pull_request:
+#     paths:
+#       - 'Aliases/emacs-head'
+#       - '.github/workflows/emacs.yml'
+#   schedule:
+#     - cron:  '0 7 * * *'
+# 
 jobs:
   build:
 
